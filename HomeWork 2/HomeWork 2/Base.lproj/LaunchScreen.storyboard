@@ -16,23 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Work 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Raf-Uz-YnU">
-                                <rect key="frame" x="110.5" y="428.5" width="193" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Work 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZM-Hb-brj">
+                                <rect key="frame" x="82" y="422" width="250" height="52"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
-                            <constraint firstItem="Raf-Uz-YnU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="7Ad-qt-IKF"/>
-                            <constraint firstItem="Raf-Uz-YnU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zJf-bm-qxX"/>
+                            <constraint firstItem="OZM-Hb-brj" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2Nw-Cq-QBp"/>
+                            <constraint firstItem="OZM-Hb-brj" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TvB-LA-4ff"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="86" y="-330"/>
         </scene>
     </scenes>
     <resources>
