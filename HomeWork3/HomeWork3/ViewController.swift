@@ -13,6 +13,13 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var passwordTextfield: UITextField!
    
+   
+    @IBAction func unwindSegueToMainScreen(segue : UIStoryboardSegue){
+        
+        
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let dvc = segue.destination as? WelkomeViewController else{
             return
@@ -41,8 +48,17 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginTan(_ sender: Any) {
-        if loginTextField.text != "Nikita" || passwordTextfield.text != "Zharinov" {
-          }else{
+        if loginTextField.text != "Nikita"  {
+            showAlert("Ошибка", "Неверный логин или пароль")
+            loginTextField.text = ""
+            passwordTextfield.text = ""
+            
+        }
+        else  if  passwordTextfield.text != "Zharinov" {
+          showAlert("Ошибка", "Неверный пароль")
+            passwordTextfield.text = ""
+            
+        }else{
             return
         }
     }
