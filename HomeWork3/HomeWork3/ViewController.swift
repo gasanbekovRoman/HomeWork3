@@ -14,21 +14,40 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextfield: UITextField!
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.destination is WelkomeViewController else{
+        guard let dvc = segue.destination as? WelkomeViewController else{
+            return
+        }
+        dvc.login = loginTextField.text
+    }
+
+    
+    func showAlert(_ title : String, _ message: String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        let actionOk = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alert.addAction(actionOk)
+        
+        self.present(alert, animated: true, completion: nil)
+    }
+   
+    @IBAction func showAlertLogin(_ sender: Any) {
+        showAlert("Подсказка", "Nikita")
+    }
+    
+    
+    
+    @IBAction func showAlertPassword(_ sender: Any) {
+        showAlert("Подсказка", "Zharinov")
+    }
+    
+    
+    @IBAction func loginTan(_ sender: Any) {
+        if loginTextField.text != "Nikita" || passwordTextfield.text != "Zharinov" {
+          }else{
             return
         }
     }
     
+  
     
     
-    @IBAction func loginTab(_ sender: Any) {
-    }
-    
-    
-
-    
-    
-
-
 }
-
