@@ -100,6 +100,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="logOutTap:" destination="Wnq-05-MBA" eventType="touchUpInside" id="kVX-gb-NfO"/>
+                                    <segue destination="gRd-BU-Tfo" kind="unwind" unwindAction="unwindSegueToMainScreenWithSegue:" id="bCg-N4-qga"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4u-3G-uJF">
@@ -129,6 +130,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OwA-Ej-NHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gRd-BU-Tfo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-690" y="-41"/>
         </scene>
