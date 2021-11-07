@@ -19,12 +19,11 @@ class ViewController: UIViewController {
         
     }
     
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let dvc = segue.destination as? WelkomeViewController else{
             return
         }
-        dvc.login = loginTextField.text
+       dvc.login = loginTextField.text
     }
 
     
@@ -48,13 +47,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginTan(_ sender: Any) {
-        if loginTextField.text != "Nikita"  {
+        if loginTextField.text != "Nikita" {
             showAlert("Ошибка", "Неверный логин или пароль")
             loginTextField.text = ""
             passwordTextfield.text = ""
             
         }
-        else  if  passwordTextfield.text != "Zharinov" {
+        else if passwordTextfield.text != "Zharinov" {
           showAlert("Ошибка", "Неверный пароль")
             passwordTextfield.text = ""
             
